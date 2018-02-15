@@ -7,9 +7,13 @@
 
 <script type="text/javascript">
 
-function cube() {
+function cubo() {
 	var num = document.getElementById("n1");
 	num.value = Math.pow(num.value, 3);
+}
+function seno() {
+	var num = document.getElementById("n1");
+	num.value = Math.sin(num.value);
 }
 </script>
 
@@ -19,6 +23,7 @@ function cube() {
 
 	Número:
 	<input type="text" id="n1" onclick="empty"><p></p>
-	<button onclick="cube()">x<sup>3</sup></button>
+	<button onclick="cubo()">x<sup>3</sup></button>
+	<button onclick="seno()">sin(x)</button>
 </body>
 </html>
